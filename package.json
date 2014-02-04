@@ -1,0 +1,40 @@
+{
+  "name": "cf-stretch-checksummer",
+  "version": "0.1.0",
+  "tags": [],
+  "description": "Checksum generator for stretcher",
+  "main": "stretch-checksummer.js",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/jshint .",
+    "pretest": "npm run-script lint",
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --recursive -R spec",
+    "posttest": "./node_modules/.bin/istanbul check-coverage && rm -rf coverage",
+    "prepublish": "npm test && npm prune"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:clocklimited/cf-stretch-checksummer"
+  },
+  "author": "James Mortemore",
+  "bugs": {
+    "url": "https://github.com/clocklimited/cf-stretch-checksummer/issues"
+  },
+  "homepage": "https://github.com/clocklimited/cf-stretch-checksummer",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "istanbul": "~0.1.44",
+    "async": "~0.2.9",
+    "should": "2",
+    "jshint": "~2.3.0"
+  },
+  "dependencies": {
+    "moment": "~2.5.1",
+    "sinon": "~1.8.1"
+  }
+}
