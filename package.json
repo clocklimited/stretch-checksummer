@@ -1,8 +1,8 @@
 {
-  "name": "cf-stretch-checksummer",
-  "version": "0.1.0",
+  "name": "stretch-checksummer",
+  "version": "1.0.0",
   "tags": [],
-  "description": "Checksum generator for stretcher",
+  "description": "Checksum generator for stretch",
   "main": "stretch-checksummer.js",
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
@@ -20,9 +20,9 @@
   },
   "author": "James Mortemore",
   "bugs": {
-    "url": "https://github.com/clocklimited/cf-stretch-checksummer/issues"
+    "url": "https://github.com/clocklimited/stretch-checksummer/issues"
   },
-  "homepage": "https://github.com/clocklimited/cf-stretch-checksummer",
+  "homepage": "https://github.com/clocklimited/stretch-checksummer",
   "engines": {
     "node": ">=0.8"
   },
