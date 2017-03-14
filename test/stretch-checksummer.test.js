@@ -17,4 +17,10 @@ describe('stretch checksummer', function () {
     checksum.should.equal('4cde938aeaef57eaafc80b76e31151fbe1cf9adf')
   })
 
+  it('should allow the date format to be passed as an argument', function () {
+    var checksum = stretchChecksummer('112233445566', 'YYYY-MM-DD mm:ss')
+
+    checksum.length.should.equal(40)
+    checksum.should.equal('46d6df8844afc9bf0b1e3d8ee94e79d65e34d5ba')
+  })
 })
