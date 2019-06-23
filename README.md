@@ -1,5 +1,7 @@
 # stretch-checksummer
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/clocklimited/stretch-checksummer.svg)](https://greenkeeper.io/)
+
 ## Usage
 ```js
 var key = 'yourKey'
